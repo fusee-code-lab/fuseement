@@ -1,0 +1,10 @@
+{
+  "name": "fuseement",
+  "version": "1.0.0",
+  "repository": "git@github.com:fusee-code-lab/fuseement.git",
+  "author": "fusee-code-lab",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
