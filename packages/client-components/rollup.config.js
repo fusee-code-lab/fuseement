@@ -1,6 +1,5 @@
 import svelte from "rollup-plugin-svelte";
 import resolve from "@rollup/plugin-node-resolve";
-// import babel from "@rollup/plugin-babel";
 import commonjs from "@rollup/plugin-commonjs";
 import replace from "@rollup/plugin-replace";
 import path from "path";
@@ -10,7 +9,7 @@ import sveltePreprocess from "svelte-preprocess";
 
 const PRODUCTION = !process.env.ROLLUP_WATCH;
 
-const projectPath = path.resolve("packages", "client-components");
+const projectPath = __dirname;
 const inputFile = path.resolve(projectPath, "lib/index.ts");
 
 const packageConfigRaw = fs.readFileSync(path.resolve(projectPath, "package.json")).toString();

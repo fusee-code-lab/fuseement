@@ -16,7 +16,7 @@
     "directory": "packages/client-components"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "bundle": "rollup -c"
   },
   "bugs": {
     "url": "https://github.com/fusee-code-lab/fuseement/issues"
