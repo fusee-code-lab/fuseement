@@ -5,25 +5,20 @@
   "author": "fusee-code-lab",
   "homepage": "https://github.com/fusee-code-lab/fuseement",
   "license": "MIT",
-  "main": "lib/index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "files": [
-    "lib"
+    "dist"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fusee-code-lab/fuseement.git"
+    "url": "git+https://github.com/fusee-code-lab/fuseement.git",
+    "directory": "packages/client-components"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/fusee-code-lab/fuseement/issues"
-  },
-  "devDependencies": {
-    "rollup-plugin-svelte": "^7.1.0"
   }
 }
