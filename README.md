@@ -7,7 +7,7 @@
 ### 📦 How to install package ?
 ```bash
 # to add global depencency
-pnpm add your-depencency -w
+yarn add your-depencency -W
 # to add depnecency in specific package
 lerna add your-depencency --scope=pakcage-name
 # install all packages / apply all package.json
