@@ -1,9 +1,5 @@
 {
-  "npmClient": "pnpm",
-  "packages": [
-    "packages/*",
-    "site"
-  ],
+  "npmClient": "yarn",
   "command": {
     "bootstrap": {
       "hoist": true

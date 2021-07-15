@@ -1,5 +1,6 @@
 <script>
-  import "./button.css";
+  // import "./button.css";
+  // TODO: support import css
   import { createEventDispatcher } from 'svelte';
   /**
    * Is this the principal call to action on the page?
