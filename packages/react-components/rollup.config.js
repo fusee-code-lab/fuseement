@@ -1,13 +1,10 @@
-import svelte from "rollup-plugin-svelte";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import replace from "@rollup/plugin-replace";
 import path from "path";
 import fs from "fs";
 import { terser } from "rollup-plugin-terser";
-import sveltePreprocess from "svelte-preprocess";
-import styles from "rollup-plugin-styles";
-import typescript from '@rollup/plugin-typescript';
+import typescript from "@rollup/plugin-typescript";
 
 const PRODUCTION = !process.env.ROLLUP_WATCH;
 
@@ -55,22 +52,16 @@ const options = {
   ],
   plugins: [
     commonjs(),
-    svelte({
-      preprocess: sveltePreprocess(),
-      dev: !PRODUCTION,
-    }),
-    typescript({ tsconfig: "./tsconfig.json" }),
     resolve({
       browser: true,
-      dedupe: ["sevlte"],
     }),
+    typescript({ tsconfig: "./tsconfig.json" }),
     replace({
       preventAssignment: true, // fix warning
       "process.env.NODE_ENV": JSON.stringify(
         PRODUCTION ? "production" : "development"
       ),
-    }),
-    styles(),
+    })
   ],
 };
 

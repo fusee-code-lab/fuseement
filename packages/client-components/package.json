@@ -1,5 +1,5 @@
 {
-  "name": "client-components",
+  "name": "@fuseement/client-components",
   "version": "0.0.1",
   "description": "Universal component written in sevlte",
   "author": "fusee-code-lab",
@@ -7,6 +7,7 @@
   "license": "MIT",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
+  "typings": "dist/types/index.d.ts",
   "files": [
     "dist"
   ],
@@ -20,5 +21,8 @@
   },
   "bugs": {
     "url": "https://github.com/fusee-code-lab/fuseement/issues"
+  },
+  "devDependencies": {
+    "@tsconfig/svelte": "^2.0.1"
   }
 }

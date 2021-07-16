@@ -1,24 +1,24 @@
-<script>
+<script lang="ts">
   // import "./button.css";
   // TODO: support import css
   import { createEventDispatcher } from "svelte";
   /**
    * Is this the principal call to action on the page?
    */
-  export let primary = false;
+  export let primary: boolean = false;
 
   /**
    * What background color to use
    */
-  export let backgroundColor;
+  export let backgroundColor: string | undefined;
   /**
    * How large should the button be?
    */
-  export let size = "medium";
+  export let size: "medium" | "large" | "small" = "medium";
   /**
    * Button contents
    */
-  export let label = "";
+  export let label: string = "";
 
   let mode = primary
     ? "storybook-button--primary"
