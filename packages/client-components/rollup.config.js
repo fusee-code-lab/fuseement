@@ -4,15 +4,18 @@ import commonjs from "@rollup/plugin-commonjs";
 import replace from "@rollup/plugin-replace";
 import path from "path";
 import fs from "fs";
-import { terser } from 'rollup-plugin-terser'
+import { terser } from "rollup-plugin-terser";
 import sveltePreprocess from "svelte-preprocess";
+import styles from "rollup-plugin-styles";
 
 const PRODUCTION = !process.env.ROLLUP_WATCH;
 
 const projectPath = __dirname;
 const inputFile = path.resolve(projectPath, "lib/index.ts");
 
-const packageConfigRaw = fs.readFileSync(path.resolve(projectPath, "package.json")).toString();
+const packageConfigRaw = fs
+  .readFileSync(path.resolve(projectPath, "package.json"))
+  .toString();
 /** @type {{module: string, main: string}} */
 const packageConfig = JSON.parse(packageConfigRaw);
 
@@ -30,12 +33,12 @@ const options = {
   output: [
     {
       ...umdOptions,
-      file: path.resolve(projectPath, "dist/index.js")
+      file: path.resolve(projectPath, "dist/index.js"),
     },
     {
       ...umdOptions,
       file: path.resolve(projectPath, "dist/index.min.js"),
-      plugins: [terser()]
+      plugins: [terser()],
     },
     {
       file: path.resolve(projectPath, packageConfig.main),
@@ -64,7 +67,8 @@ const options = {
       "process.env.NODE_ENV": JSON.stringify(
         PRODUCTION ? "production" : "development"
       ),
-    })
+    }),
+    styles(),
   ],
 };
 
