@@ -1,9 +1,11 @@
 {
-  "extends": "@tsconfig/svelte/tsconfig.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "rootDir": ".",
     "declaration": true,
-    "declarationDir": "./types"
+    "declarationDir": "./types",
+    "outDir": "./dist"
   },
   "include": ["lib/**/*"],
-  "exclude": ["node_modules/*", "dist/*"]
+  "exclude": ["dist/*"]
 }
