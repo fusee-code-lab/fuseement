@@ -15,13 +15,13 @@
     "url": "git+https://github.com/fusee-code-lab/fuseement.git"
   },
   "scripts": {
-    "dev": "rollup -cw",
-    "bundle": "rollup -c"
+    "dev": "vercel dev"
   },
   "bugs": {
     "url": "https://github.com/fusee-code-lab/fuseement/issues"
   },
   "dependencies": {
+    "@vercel/node": "^1.11.1",
     "express": "^4.17.1"
   },
   "devDependencies": {
