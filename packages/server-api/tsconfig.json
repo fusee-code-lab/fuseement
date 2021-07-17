@@ -2,11 +2,9 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "rootDir": ".",
-    "declaration": true,
-    "declarationDir": "./types",
     "outDir": "./dist",
-    "lib": ["es2017", "DOM", "DOM.Iterable"]
+    "declaration": false
   },
-  "include": ["lib/**/*"],
+  "include": ["src/**/*"],
   "exclude": ["dist/*"]
 }

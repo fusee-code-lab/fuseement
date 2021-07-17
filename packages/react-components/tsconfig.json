@@ -5,7 +5,8 @@
     "declaration": true,
     "declarationDir": "./types",
     "jsx": "react",
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "lib": ["es2017", "DOM", "DOM.Iterable"]
   },
   "include": ["lib/**/*"],
   "exclude": ["dist/*"]

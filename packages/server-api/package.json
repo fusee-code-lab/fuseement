@@ -1,0 +1,30 @@
+{
+  "name": "@fuseement/server-api",
+  "version": "0.0.1",
+  "description": "The server api of fuseement",
+  "author": "fusee-code-lab",
+  "homepage": "https://github.com/fusee-code-lab/fuseement#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "directories": {
+    "lib": "src",
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fusee-code-lab/fuseement.git"
+  },
+  "scripts": {
+    "dev": "rollup -cw",
+    "bundle": "rollup -c"
+  },
+  "bugs": {
+    "url": "https://github.com/fusee-code-lab/fuseement/issues"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13"
+  }
+}

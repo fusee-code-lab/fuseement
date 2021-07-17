@@ -8,6 +8,10 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "typings": "dist/types/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
   "files": [
     "dist"
   ],
