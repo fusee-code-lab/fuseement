@@ -22,14 +22,15 @@
 - 运行命令 `yarn build:client` 打包 svelte 组件 到 `packages/client-components/dist` 下
 - 运行 `yarn build:react` 打包 react 组件到 `packages/react-components/dist` 下
 - 运行 `yarn build:vue` 打包 react 组件到 `packages/vue-components/dist` 下
+- 运行 `yarn fix:prettier` 来格式化所有代码
 
 ### 📦 How to install package ?
 
 ```bash
-# to add global depencency
+# 添加全局可用的依赖, 添加 -D 来安装开发依赖
 yarn add your-depencency -W
-# to add depnecency in specific package
+# 安装依赖到指定包, 添加 -D 来安装开发依赖
 lerna add your-depencency --scope=pakcage-name
-# install all packages / apply all package.json
+# 安装所有依赖，相当于 npm install
 lerna bootstrap --hoist
 ```
