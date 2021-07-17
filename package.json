@@ -11,11 +11,10 @@
   "scripts": {
     "start": "yarn workspace site start",
     "dev:client": "start-storybook -p 6006",
-    "dev:api-bundle": "yarn workspace @fuseement/server-api dev",
+    "dev:api": "yarn workspace @fuseement/server-api start",
     "build:client": "yarn workspace @fuseement/client-components bundle",
     "build:react": "yarn workspace @fuseement/react-components bundle",
     "build:vue": "yarn workspace @fuseement/vue-components bundle",
-    "build:api": "yarn workspace @fuseement/server-api bundle",
     "fix:prettier": "prettier \"packages/**/*.{ts,tsx,svelte,vue}\" --write",
     "check:prettier": "prettier \"packages/**/*.{ts,tsx,svelte,vue}\" --list-different"
   },

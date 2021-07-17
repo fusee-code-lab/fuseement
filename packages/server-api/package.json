@@ -15,7 +15,7 @@
     "url": "git+https://github.com/fusee-code-lab/fuseement.git"
   },
   "scripts": {
-    "dev": "vercel dev"
+    "start": "vercel dev"
   },
   "bugs": {
     "url": "https://github.com/fusee-code-lab/fuseement/issues"
