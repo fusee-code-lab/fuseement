@@ -5,11 +5,11 @@
 
 ## Packages
 
-| Package | Description |
-| --- | --- |
-| [@fuseement/client-components](./packages/client-components) | Svelte/Vanilla JS component |
-| [@fuseement/react-components](./packages/react-components) |  React component |
-| [@fuseement/vue-components](./packages/vue-components) | Vue component |
+| Package                                                      | Status                                                        | Description                 |
+| ------------------------------------------------------------ | ------------------------------------------------------------- | --------------------------- |
+| [@fuseement/client-components](./packages/client-components) | ![status](https://shields.io/badge/-under_development-yellow) | Svelte/Vanilla JS component |
+| [@fuseement/react-components](./packages/react-components)   | ![status](https://shields.io/badge/-under_development-yellow) | React component             |
+| [@fuseement/vue-components](./packages/vue-components)       | ![status](https://shields.io/badge/-under_development-yellow) | Vue component               |
 
 ## Contribution
 
