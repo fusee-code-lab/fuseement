@@ -21,6 +21,7 @@
 - 运行命令 `yarn start` 启动 fuseement 站点
 - 运行命令 `yarn build:client` 打包 svelte 组件 到 `packages/client-components/dist` 下
 - 运行 `yarn build:react` 打包 react 组件到 `packages/react-components/dist` 下
+- 运行 `yarn build:vue` 打包 react 组件到 `packages/vue-components/dist` 下
 
 ### 📦 How to install package ?
 
