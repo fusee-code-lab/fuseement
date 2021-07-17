@@ -11,6 +11,7 @@
 | [@fuseement/react-components](./packages/react-components)   | ![status](https://shields.io/badge/-under_development-yellow) | React component             |
 | [@fuseement/vue-components](./packages/vue-components)       | ![status](https://shields.io/badge/-under_development-yellow) | Vue component               |
 | [@fuseement/server-api](./packages/server-api)               | ![status](https://shields.io/badge/-under_development-yellow) | Vercel serverless function  |
+| [@fuseement/dashboard](./packages/dashboard)                 | ![status](https://shields.io/badge/-under_development-yellow) | The dashboard site          |
 
 ## Contribution
 
@@ -21,6 +22,7 @@
 - 运行 `yarn start` 启动 fuseement 文档网站及其主页
 - 运行 `yarn dev:client` 启动 `storybook` 来查看组件效果，此时更改组件会热更新
 - 运行 `yarn dev:api` 启动 vercel 本地调试模式
+- 运行 `yarn dev:dash` 启动仪表盘站点
 - 运行 `yarn build:client` 打包 svelte 组件 到 `packages/client-components/dist` 下
 - 运行 `yarn build:react` 打包 react 组件到 `packages/react-components/dist` 下
 - 运行 `yarn build:vue` 打包 react 组件到 `packages/vue-components/dist` 下
