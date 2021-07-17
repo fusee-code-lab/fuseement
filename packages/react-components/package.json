@@ -2,7 +2,7 @@
   "name": "@fuseement/react-components",
   "version": "0.0.1",
   "description": "React wrapper of @fuseement/client-components",
-  "author": "jctaoo <jctaoo@outlook.com>",
+  "author": "fusee-code-lab",
   "homepage": "https://github.com/fusee-code-lab/fuseement",
   "license": "MIT",
   "main": "dist/index.cjs.js",

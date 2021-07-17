@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "declaration": true,
+    "declarationDir": "./types",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "dist"
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.vue"]
+}

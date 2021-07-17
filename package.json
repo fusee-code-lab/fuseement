@@ -13,7 +13,8 @@
     "start": "yarn workspace site start",
     "dev:client": "start-storybook -p 6006",
     "build:client": "yarn workspace @fuseement/client-components bundle",
-    "build:react": "yarn workspace @fuseement/react-components bundle"
+    "build:react": "yarn workspace @fuseement/react-components bundle",
+    "build:vue": "yarn workspace @fuseement/vue-components bundle"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
@@ -28,12 +29,15 @@
     "@storybook/addon-svelte-csf": "^1.1.0",
     "@storybook/svelte": "^6.3.4",
     "@types/node": "^16.3.2",
+    "@vue/compiler-sfc": "^3.1.5",
     "lerna": "^4.0.0",
     "postcss": "^8.3.5",
     "rollup": "^2.53.1",
     "rollup-plugin-styles": "^3.14.1",
     "rollup-plugin-svelte": "^7.1.0",
     "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "rollup-plugin-vue": "^6.0.0",
     "sass": "^1.35.2",
     "svelte": "^3.38.3",
     "svelte-loader": "^3.1.2",

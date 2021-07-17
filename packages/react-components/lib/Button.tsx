@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import * as fuseement from "@fuseement/client-components";
 
 export interface ButtonProps {
-  primary: string;
+  primary: boolean;
   backgroundColor: string;
   size: "medium" | "medium" | "large";
   label: string;

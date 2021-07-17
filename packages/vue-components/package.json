@@ -1,14 +1,16 @@
 {
-  "name": "vue-components",
+  "name": "@fuseement/vue-components",
   "version": "0.0.1",
   "description": "Vue wrapper of @fuseement/client-components",
-  "author": "jctaoo <jctaoo@outlook.com>",
+  "author": "fusee-code-lab",
   "homepage": "https://github.com/fusee-code-lab/fuseement",
   "license": "MIT",
-  "main": "lib/vue-components.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/types/lib/index.d.ts",
   "directories": {
     "lib": "lib",
-    "test": "__tests__"
+    "test": "tests"
   },
   "files": [
     "lib"
@@ -18,9 +20,19 @@
     "url": "git+https://github.com/fusee-code-lab/fuseement.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "dev": "rollup -cw",
+    "bundle": "rollup -c"
   },
   "bugs": {
     "url": "https://github.com/fusee-code-lab/fuseement/issues"
+  },
+  "devDependencies": {
+    "vue": "^3.1.5"
+  },
+  "peerDependencies": {
+    "vue": "*"
+  },
+  "dependencies": {
+    "@fuseement/client-components": "^0.0.1"
   }
 }
