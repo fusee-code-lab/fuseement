@@ -1,0 +1,37 @@
+{
+  "name": "@fuseement/dashboard",
+  "version": "0.0.1",
+  "description": "The dashboard site of fuseement",
+  "author": "fusee-code-lab",
+  "homepage": "https://github.com/fusee-code-lab/fuseement#readme",
+  "license": "MIT",
+  "main": "lib/dashboard.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fusee-code-lab/fuseement.git"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "bugs": {
+    "url": "https://github.com/fusee-code-lab/fuseement/issues"
+  },
+  "dependencies": {
+    "next": "^11.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9"
+  }
+}
