@@ -13,11 +13,7 @@
     "dev:client": "start-storybook -p 6006",
     "build:client": "yarn workspace @fuseement/client-components bundle",
     "build:react": "yarn workspace @fuseement/react-components bundle",
-    "build:vue": "yarn workspace @fuseement/vue-components bundle",
-    "prepare": "husky install"
-  },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "build:vue": "yarn workspace @fuseement/vue-components bundle"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
@@ -35,7 +31,6 @@
     "@vue/compiler-sfc": "^3.1.5",
     "husky": "^7.0.1",
     "lerna": "^4.0.0",
-    "lint-staged": "^11.0.1",
     "postcss": "^8.3.5",
     "prettier": "2.3.2",
     "rollup": "^2.53.1",
