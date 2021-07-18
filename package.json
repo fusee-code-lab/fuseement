@@ -11,6 +11,7 @@
   "scripts": {
     "start": "yarn workspace site start",
     "dev:client": "start-storybook -p 6006",
+    "dev:client-force": "start-storybook -p 6006 --no-manager-cache",
     "dev:api": "yarn workspace @fuseement/server-api start",
     "dev:dash": "yarn workdpace @fuseement/dashboard dev",
     "build:client": "yarn workspace @fuseement/client-components bundle",

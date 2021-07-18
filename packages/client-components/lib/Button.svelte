@@ -31,7 +31,7 @@
   /**
    * Optional click handler
    */
-  function onClick(event) {
+  function onClick(event: Event) {
     dispatch("click", event);
   }
 </script>
@@ -57,7 +57,7 @@
   }
   .storybook-button--primary {
     color: white;
-    background-color: #1ea7fd;
+    background-color: #1efd8e;
   }
   .storybook-button--secondary {
     color: #333;
