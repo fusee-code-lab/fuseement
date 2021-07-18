@@ -41,12 +41,12 @@ lerna bootstrap
 ```
 
 
-## 🤔️ Q&A
+### 🤔️ Q&A
 
-### Cannot find module '@fuseement/client-components'
+#### Cannot find module '@fuseement/client-components'
 
 提示找不到 `@fuseement/client-components` 的 ts 定义文件，运行 `yarn build:client` 就可以
 
-### Storybook 运行失败
+#### Storybook 运行失败
 
 Storybook 运行访问后页面上只有 `Cannot Get /`，尝试运行 `dev:client-force`
