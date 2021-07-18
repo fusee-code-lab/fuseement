@@ -15,6 +15,7 @@
 
 ## Contribution
 
+
 ### 🚗 如何开始?
 
 - 使用 `yarn install` 安装依赖包
@@ -28,7 +29,7 @@
 - 运行 `yarn build:vue` 打包 react 组件到 `packages/vue-components/dist` 下
 - 运行 `yarn fix:prettier` 来格式化所有代码
 
-### 📦 How to install package ?
+### 📦 如何安装包 ?
 
 ```bash
 # 添加全局可用的依赖, 添加 -D 来安装开发依赖
@@ -36,5 +37,16 @@ yarn add your-depencency -W
 # 安装依赖到指定包, 添加 -D 来安装开发依赖
 lerna add your-depencency --scope=pakcage-name
 # 安装所有依赖，相当于 npm install
-lerna bootstrap --hoist
+lerna bootstrap
 ```
+
+
+## 🤔️ Q&A
+
+### Cannot find module '@fuseement/client-components'
+
+提示找不到 `@fuseement/client-components` 的 ts 定义文件，运行 `yarn build:client` 就可以
+
+### Storybook 运行失败
+
+Storybook 运行访问后页面上只有 `Cannot Get /`，尝试运行 `dev:client-force`
